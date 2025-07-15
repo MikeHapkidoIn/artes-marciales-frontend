@@ -128,7 +128,7 @@ const ArteMarcialDetail = () => {
             <p className="text-lg text-gray-700 font-medium">{arte.focus}</p>
           </div>
 
-          {/* Philosophy */}
+          {/* Filosofia */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <div className="flex items-center space-x-2 mb-4">
               <Users className="h-6 w-6 text-purple-600" />
@@ -137,7 +137,7 @@ const ArteMarcialDetail = () => {
             <p className="text-gray-700 leading-relaxed">{arte.filosofia}</p>
           </div>
 
-          {/* History */}
+          {/* Historia */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <div className="flex items-center space-x-2 mb-4">
               <Book className="h-6 w-6 text-green-600" />
@@ -146,7 +146,7 @@ const ArteMarcialDetail = () => {
             <p className="text-gray-700 leading-relaxed">{arte.historia}</p>
           </div>
 
-          {/* Techniques */}
+          {/* Tecnicas */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <div className="flex items-center space-x-2 mb-4">
               <Target className="h-6 w-6 text-indigo-600" />
@@ -184,7 +184,7 @@ const ArteMarcialDetail = () => {
             </div>
           </div>
 
-          {/* Combat Distances */}
+          {/* Distancias de combate */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <h3 className="text-lg font-bold text-gray-800 mb-4">Distancias de Combate</h3>
             <div className="space-y-2">
@@ -196,7 +196,7 @@ const ArteMarcialDetail = () => {
             </div>
           </div>
 
-          {/* Weapons */}
+          {/* Armas */}
           {arte.armas.length > 0 && (
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center space-x-2 mb-4">
@@ -213,7 +213,7 @@ const ArteMarcialDetail = () => {
             </div>
           )}
 
-          {/* Strengths */}
+          {/* Fortalezas */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <div className="flex items-center space-x-2 mb-4">
               <Zap className="h-5 w-5 text-green-600" />
@@ -229,7 +229,7 @@ const ArteMarcialDetail = () => {
             </ul>
           </div>
 
-          {/* Weaknesses */}
+          {/* Debilidades */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <div className="flex items-center space-x-2 mb-4">
               <AlertTriangle className="h-5 w-5 text-red-600" />

@@ -62,7 +62,7 @@ function App() {
       );
     }
 
-    // Other filters
+    // otros filtros
     Object.entries(filters).forEach(([key, value]) => {
       if (value) {
         filtered = filtered.filter(arte => arte[key] === value);
@@ -124,7 +124,7 @@ function App() {
                 />
               </div>
 
-              {/* Comparison Bar */}
+              {/* Barra de comparacion */}
               {selectedForComparison.length > 0 && (
                 <div className="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <div className="flex items-center justify-between">
@@ -151,14 +151,14 @@ function App() {
                 </div>
               )}
 
-              {/* Error Message */}
+              {/* Mensaje de error */}
               {error && (
                 <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4">
                   <p className="text-red-700">{error}</p>
                 </div>
               )}
 
-              {/* Results */}
+              {/* Resultados */}
               <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">
                   Artes Marciales ({filteredArtes.length})
@@ -183,7 +183,7 @@ function App() {
                 )}
               </div>
 
-              {/* Comparison Modal */}
+              {/* Modelo de comparacion */}
               {showComparison && (
                 <ComparisonModal
                   selectedIds={selectedForComparison}

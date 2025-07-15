@@ -33,7 +33,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
     }
   };
 
-  // Usar la primera imagen si existe, sino usar una imagen por defecto
+  
   const backgroundImage = arte.imagenes && arte.imagenes.length > 0 
     ? arte.imagenes[0] 
     : `https://res.cloudinary.com/dchedntcz/image/upload/v1751469388/man-kimono-black-belt-on-600nw-2166416263_ssdciw.webp`;
@@ -66,7 +66,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
             </div>
           </div>
           
-          {/* Comparison Toggle */}
+          {/* token comparador */}
           <button
             onClick={() => onComparisonToggle(arte._id)}
             disabled={!canSelect}
@@ -83,7 +83,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
         </div>
       </div>
 
-      {/* Content */}
+      {/* Contenido */}
       <div className="p-6 bg-gradient-to-br from-blue-50 to-white">
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
@@ -98,13 +98,13 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
           </span>
         </div>
 
-        {/* Focus */}
+        {/* Foco del arte marcial */}
         <div className="flex items-center space-x-2 mb-4 p-3 bg-blue-50 rounded-lg border border-blue-100">
           <Target className="h-5 w-5 text-blue-600 flex-shrink-0" />
           <span className="text-blue-800 font-medium text-sm">{arte.focus}</span>
         </div>
 
-        {/* Distances */}
+        {/* Distancias */}
         <div className="mb-4">
           <h4 className="text-sm font-semibold text-blue-800 mb-2 flex items-center">
             <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
@@ -119,7 +119,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
           </div>
         </div>
 
-        {/* Strengths */}
+        {/* fortalezas */}
         <div className="mb-4">
           <h4 className="text-sm font-semibold text-blue-800 mb-2 flex items-center">
             <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
@@ -140,7 +140,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
           </div>
         </div>
 
-        {/* Weapons */}
+        {/* Armas */}
         {arte.armas.length > 0 && (
           <div className="mb-4">
             <h4 className="text-sm font-semibold text-blue-800 mb-2 flex items-center">
@@ -162,7 +162,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
           </div>
         )}
 
-        {/* Philosophy */}
+        {/* Filosofia */}
         <div className="mb-6 p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
           <h4 className="text-sm font-semibold text-blue-800 mb-2 flex items-center">
             <div className="w-2 h-2 bg-indigo-600 rounded-full mr-2"></div>
@@ -173,7 +173,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
           </p>
         </div>
 
-        {/* Action Button */}
+        {/* Boton detalles */}
         <Link
           to={`/arte/${arte._id}`}
           className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 text-center block group-hover:shadow-lg transform hover:scale-[1.02] flex items-center justify-center space-x-2"

@@ -79,9 +79,9 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
           </button>
         </div>
 
-        {/* Content */}
+        {/* Contenido */}
         <div className="p-6">
-          {/* Names Header */}
+          {/* Names Cabecera */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
             {artesMarciales.map((arte) => (
               <div key={arte._id} className="text-center">
@@ -92,7 +92,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </div>
 
-          {/* Basic Info */}
+          {/* Informacion Basica */}
           <ComparisonRow label="Información Básica" icon={MapPin}>
             {artesMarciales.map((arte) => (
               <div key={arte._id} className="space-y-2">
@@ -103,7 +103,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Focus */}
+          {/* Foco */}
           <ComparisonRow label="Enfoque" icon={Target}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -112,7 +112,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Physical Demands */}
+          {/* Demandas Fisicas */}
           <ComparisonRow label="Demandas Físicas" icon={Zap}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -123,7 +123,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Contact Type */}
+          {/* Tipo de contacto */}
           <ComparisonRow label="Tipo de Contacto" icon={Target}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -134,7 +134,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Distances */}
+          {/* Distancias */}
           <ComparisonRow label="Distancias de Combate" icon={Target}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -149,7 +149,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Strengths */}
+          {/* Fortalezas */}
           <ComparisonRow label="Fortalezas" icon={Zap}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -165,7 +165,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Weaknesses */}
+          {/* Debilidades */}
           <ComparisonRow label="Debilidades" icon={AlertTriangle}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -181,7 +181,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Weapons */}
+          {/* Armas */}
           <ComparisonRow label="Armas" icon={Sword}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -200,7 +200,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Techniques */}
+          {/* Tecnicas*/}
           <ComparisonRow label="Técnicas Principales" icon={Target}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
@@ -216,7 +216,7 @@ const ComparisonModal = ({ selectedIds, onClose }) => {
             ))}
           </ComparisonRow>
 
-          {/* Philosophy */}
+          {/* Filosofia*/}
           <ComparisonRow label="Filosofía" icon={Target}>
             {artesMarciales.map((arte) => (
               <div key={arte._id}>
