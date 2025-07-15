@@ -36,7 +36,7 @@ const ArteMarcialCard = ({ arte, isSelected, onComparisonToggle, canSelect }) =>
   
   const backgroundImage = arte.imagenes && arte.imagenes.length > 0 
     ? arte.imagenes[0] 
-    : `https://res.cloudinary.com/dchedntcz/image/upload/v1751469388/man-kimono-black-belt-on-600nw-2166416263_ssdciw.webp`;
+    : `https://res.cloudinary.com/dchedntcz/image/upload/v1752521799/1104079-amazing-karate-wallpaper-2560x1440-for-htc_gdji4h.jpg`;
 
   return (
     <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-blue-200 overflow-hidden group transform hover:-translate-y-1">
