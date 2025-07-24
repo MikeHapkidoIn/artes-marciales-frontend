@@ -115,7 +115,7 @@ const ArteMarcialDetail = () => {
         </div>
       </div>
 
-      {/* Main Content */}
+      {/* contenido main */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Column - Main Info */}
         <div className="lg:col-span-2 space-y-8">
@@ -163,9 +163,9 @@ const ArteMarcialDetail = () => {
           </div>
         </div>
 
-        {/* Right Column - Quick Stats */}
+        {/* columna derecha */}
         <div className="space-y-6">
-          {/* Basic Info */}
+          {/* informacion basica */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <h3 className="text-lg font-bold text-gray-800 mb-4">Información Básica</h3>
             <div className="space-y-3">

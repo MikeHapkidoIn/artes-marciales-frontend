@@ -53,7 +53,7 @@ function App() {
   const applyFilters = () => {
     let filtered = artesMarciales;
 
-    // Search filter
+    // busqueda por filtro
     if (searchTerm) {
       filtered = filtered.filter(arte =>
         arte.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -62,7 +62,7 @@ function App() {
       );
     }
 
-    // Other filters
+    // otros filtros
     Object.entries(filters).forEach(([key, value]) => {
       if (value) {
         filtered = filtered.filter(arte => arte[key] === value);
@@ -104,7 +104,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <main className="container mx-auto px-4 py-8">
-              {/* Search and Filters */}
+              {/* busqueda y filtros */}
               <div className="mb-8">
                 <div className="relative mb-6">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -124,7 +124,7 @@ function App() {
                 />
               </div>
 
-              {/* Comparison Bar */}
+              {/* Barra de comparacion */}
               {selectedForComparison.length > 0 && (
                 <div className="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <div className="flex items-center justify-between">
@@ -151,14 +151,14 @@ function App() {
                 </div>
               )}
 
-              {/* Error Message */}
+              {/* mensaje de error */}
               {error && (
                 <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4">
                   <p className="text-red-700">{error}</p>
                 </div>
               )}
 
-              {/* Results */}
+              {/* resultados */}
               <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">
                   Artes Marciales ({filteredArtes.length})
@@ -183,7 +183,7 @@ function App() {
                 )}
               </div>
 
-              {/* Comparison Modal */}
+              {/* modelo de comparacion */}
               {showComparison && (
                 <ComparisonModal
                   selectedIds={selectedForComparison}
